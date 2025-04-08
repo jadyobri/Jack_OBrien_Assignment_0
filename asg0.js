@@ -90,10 +90,8 @@ function handleDrawEvent(){
     drawVector(v2, "blue");
     let operation = document.getElementById("operations").value;
     let scalar = parseFloat(document.getElementById("scalar").value);
-    console.log(operation);
     
     if(operation == "add"){
-        console.log(scalar);
         let sum = new Vector3([x1, y1, 0]).add(new Vector3([x2,y2,0]));
         
         drawVector([sum.elements[0],sum.elements[1]], "green");
